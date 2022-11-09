@@ -1,4 +1,3 @@
-<div style="background-color: rgb(50, 50, 50);">
 # Docker Tutorial taught by Java Brains.
 
 ## Creating containers from images
@@ -17,6 +16,20 @@
 
 ## Examining containers in Docker Desktop
 ```
+docker run httpd --> download and run httpd
 ```
-</div>
 
+## Docker CLI Recap
+```
+docker images -- list of available images
+```
+
+## Runniing Java with out installing Java
+```
+docker run -it openjdk bash  --> container with java installed.
+```
+
+## Running Nodejs with out installing Nodejs
+```
+docker run -it node bash
+```
