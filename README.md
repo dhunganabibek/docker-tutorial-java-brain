@@ -1,7 +1,8 @@
+<div style="background-color: rgb(50, 50, 50);">
 # Docker Tutorial taught by Java Brains.
 
 ## Creating containers from images
-```
+``` 
 1. docker pull alpine --> download alpine from dockerhub.
 2. docker run alpine ls --> run ls in alpine containers.
 3. docker run -it alpine sh --> run interactive terminal.
@@ -13,3 +14,9 @@
 1. docker ps --> list of running containers
 2. docker ps -a --> list of all running containers
 ```
+
+## Examining containers in Docker Desktop
+```
+```
+</div>
+
