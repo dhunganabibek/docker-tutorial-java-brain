@@ -134,3 +134,8 @@ docker run -it --rm -v new-vol:/vol alpine sh
 docker run -p 8080:80 nginx
 Description: Port of Windows/Mac/Linux 8080 to port 80 of conatainer
 ```
+
+## web application development with docker
+```
+docker run --rm -v ${PWD}:/usr/share/nginx/html -p 8081:80 -d nginx
+```
