@@ -19,12 +19,17 @@ WORKDIR code
 # The state of file will be same as when the image is created.
 COPY test .
 
-RUN javac test/Test.java
+
+#  using exec format .--better than stating shell and running command.(USED by RUN)
+RUN ["javac", "test/Test.java"]
 
 
 # RUN when container is being created from that image. (NOT WHILE CREATING IMAGE)
 # You can override this command doing : docker run --rm -it test5 echo "hello"
 # CMD echo "welcome to my Custom container" && sh
 CMD java test.Test && sh
+
+
+
 
 
