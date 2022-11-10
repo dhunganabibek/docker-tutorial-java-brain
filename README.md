@@ -127,3 +127,10 @@ docker run --name my-mysqlvol -e MYSQL_ROOT_PASSWORD:TestinG123@ -v ${PWD}:/var/
 ```
 docker run -it --rm -v new-vol:/vol alpine sh
 ```
+
+
+## Port mapping with Docker Container
+```
+docker run -p 8080:80 nginx
+Description: Port of Windows/Mac/Linux 8080 to port 80 of conatainer
+```
