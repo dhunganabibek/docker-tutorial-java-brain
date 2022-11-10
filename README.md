@@ -113,3 +113,17 @@ docker run --rm -it -v $(pwd):/usr/src/project gcc:4.9
 ```
 docker run --name my-mysqlvol -e MYSQL_ROOT_PASSWORD:TestinG123@ -v ${PWD}:/var/lib/mysql -d -it  mysql
 ```
+
+
+## Managing Docker Volume
+```
+1. docker vol ls
+2. docker volume create <volume-name>
+3. docker volume inspect <volume-name>
+4. docker volume rm <volume-name>
+```
+
+## Attaching volume to a container
+```
+docker run -it --rm -v new-vol:/vol alpine sh
+```
