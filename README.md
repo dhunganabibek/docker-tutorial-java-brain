@@ -159,3 +159,9 @@ current working directory.
 Then, to use that image:
 docker run --rm -it test
 ```
+
+## CMD vs ENTRYPOINT
+```
+CMD - run during makeing conatainer instance.
+ENTRYPOINT - takes command line arguments
+```
