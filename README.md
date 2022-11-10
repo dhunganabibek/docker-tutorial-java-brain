@@ -186,3 +186,25 @@ VOLUME ["/host/dir","conatainer/dir"]
 USER test
 who is current login user for that conatainer.
 ```
+
+
+## Networking with Docker
+```
+docker virtualize network too. The process does not shared host network
+It create its own network.
+
+ALl container shared same network. --- Bridge network.
+You can run httpd in one contianer and call it from wget busybox.
+```
+
+## Network Types
+```
+1. bridge network.
+2. host network.
+3. none.
+4. overlay -- deling with docker swarm.
+5. ipvlan -- control over ip address.
+6. macvlan -- control over mac address.
+7. Third party driver -- configure your own network.
+```
+
