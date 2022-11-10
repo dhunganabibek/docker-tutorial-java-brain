@@ -57,7 +57,6 @@ docker run -it node bash
 ## Detach from and Attach to running containers
 ```
 1. docker run -d httpd  --> run in background and do not take the terminal 
-2. 
 ```
 
 ## docker exec
@@ -74,5 +73,23 @@ docker run -it --rm alpine sh
 
 ## running MySQL server with Docker
 ```
-1. 
+1. docker run --name my-mysql -d -e MYSQL_ROOT_PASSWORD=TestinG123@ mysql
+
+Description:
+--name: giving name
+-d: detach it
+-e: set environment variable
+
+
+2. docker exec -it my-mysql bash
+Description: getting into bash of that conatainer.
+
+3. mysql -u root -p 
+Description: logging into mysql.
+
+```
+
+## Mounting a host folder using docker volume
+```
+
 ```
