@@ -33,3 +33,12 @@ docker run -it openjdk bash  --> container with java installed.
 ```
 docker run -it node bash
 ```
+
+
+## Images vs Containers
+```
+1. Image is a template and container is its instance.
+2. docker save ubuntu -o ubuntu.zip --> saving container instance.
+3. Do not tweak a container, rather change image and build container from that modified image.
+4. latest is a tag. It is just a name. usually to track version
+```
