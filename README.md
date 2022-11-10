@@ -165,3 +165,24 @@ docker run --rm -it test
 CMD - run during makeing conatainer instance.
 ENTRYPOINT - takes command line arguments
 ```
+## Common DockerFile Commmand
+```
+MAINTAINER: --> give info about author.
+
+ADD --> simlar to copy. extract zip and copy. also can give url
+ADD hello.zip .
+
+ENV --> set environemnt variable
+can not set environment variable using set, export shell commmand.
+ENV DB_HOST_URL mydatabaseurl:1234/db
+
+
+EXPOSE --> expose a certain port.
+EXPOSE 8080
+
+VOLUME --> volume mount
+VOLUME ["/host/dir","conatainer/dir"]
+
+USER test
+who is current login user for that conatainer.
+```
