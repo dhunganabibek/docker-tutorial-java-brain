@@ -139,3 +139,23 @@ Description: Port of Windows/Mac/Linux 8080 to port 80 of conatainer
 ```
 docker run --rm -v ${PWD}:/usr/share/nginx/html -p 8081:80 -d nginx
 ```
+
+## Docker Architecture
+```
+docker rmi <image_name> --> remove docker images.
+
+Use multiple layer
+
+docker inspect image openjdk:17-jdk
+```
+
+## creating image Using Dockerfile
+```
+docker build -t test .
+
+It will create a docker image with name test reading the content from Dockerfile present in 
+current working directory.
+
+Then, to use that image:
+docker run --rm -it test
+```
