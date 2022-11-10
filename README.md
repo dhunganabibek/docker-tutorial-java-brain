@@ -91,5 +91,20 @@ Description: logging into mysql.
 
 ## Mounting a host folder using docker volume
 ```
+docker run --name my-openjdk -it -v ${PWD}:/hostvol openjdk bash
+
+DESCRIPTION:
+-v: volume mount
+-it: interactive terminal
+--name: giving. 
+
+For Windows: (CMD)
+docker run --rm -it -v %cd%:/usr/src/project gcc:4.9
+
+For Windows : (Powershell)
+docker run --rm -it -v ${PWD}:/usr/src/project gcc:4.9
+
+For Linux: 
+docker run --rm -it -v $(pwd):/usr/src/project gcc:4.9
 
 ```
