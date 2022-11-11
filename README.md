@@ -208,3 +208,10 @@ You can run httpd in one contianer and call it from wget busybox.
 7. Third party driver -- configure your own network.
 ```
 
+
+## Docker Compose
+```
+a. You need multiple conatiners for your application. use docker compose.
+b. alternative for docker run.
+
+```
