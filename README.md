@@ -24,7 +24,7 @@ docker run httpd --> download and run httpd
 docker images -- list of available images
 ```
 
-## Runniing Java with out installing Java
+## Running Java with out installing Java
 ```
 docker run -it openjdk bash  --> container with java installed.
 ```
