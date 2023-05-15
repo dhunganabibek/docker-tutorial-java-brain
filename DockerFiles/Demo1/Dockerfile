@@ -1,2 +1,6 @@
 FROM alpine
-RUN touch helloworld.txt
+RUN mkdir code; \
+    cd code; \
+    echo "Hello world" > helloworld.txt
+WORKDIR code
+
